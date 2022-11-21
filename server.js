@@ -7,10 +7,7 @@ const router = express.Router();
 const app = express();
 const port = 3000;
 const log = console.log;
-// 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 -- jaminut hello
-sgMail.setApiKey(
-  "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"
-);
+sgMail.setApiKey();
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 app.get("/", (req, res) => {
